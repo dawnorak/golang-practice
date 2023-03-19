@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func main() {
@@ -11,7 +10,7 @@ func main() {
 	fmt.Scanln(&word)
 
 	count := 0
-	for _, char := range strings.ToLower(word) {
+	for _, char := range (word) {
 		if char >= 'a' && char <= 'z' {
 			count++
 		}
