@@ -64,6 +64,15 @@ func greeting() {
 	}
 }
 
+func counting() {
+	fmt.Println("Anyone can count in order. Let's count in reverse. Let me just think first...")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("Done.")
+}
 
 func main() {
 	sum := 0
@@ -78,4 +87,5 @@ func main() {
 	indent()
 	times()
 	greeting()
+	counting()
 }
